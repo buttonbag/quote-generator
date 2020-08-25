@@ -1,0 +1,73 @@
+@charset "UTF-8";
+:root {
+  font-size: 62.5%;
+  color: #333;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 50rem;
+  background-color: #c0c0c0;
+  margin: 0 auto;
+  padding: 4rem;
+  align-items: center;
+}
+
+button {
+  text-transform: uppercase;
+  padding: 1rem 2.5rem;
+  border-radius: 1rem;
+  border: none;
+  font-size: 1.6rem;
+  line-height: 1;
+  background-color: #00609b;
+  color: white;
+  max-width: 50rem;
+}
+
+.quote {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 2.5rem;
+  line-height: 1.2;
+  display: flex;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding: 2.5rem 0;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  opacity: 0;
+}
+.quote:before {
+  content: "“";
+  font-size: 2.4em;
+  color: #666;
+  margin: 0 1rem;
+}
+.quote:after {
+  content: "”";
+  font-size: 2.4em;
+  color: #666;
+  margin: 0 1rem;
+}
+
+.credit {
+  font-size: 1.6rem;
+  text-align: right;
+}
+.credit:before {
+  content: "— ";
+}
+
+/* UTIILITY */
+.show {
+  opacity: 1;
+  transition: 1s all;
+}
+
+/*# sourceMappingURL=style.css.map */
