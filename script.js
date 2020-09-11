@@ -15,7 +15,7 @@ fetch('https://breaking-bad-quotes.herokuapp.com/v1/quotes/100')
 	
 	getQuote = () => {
 		quote.classList.remove("show");
-		setTimeout((fade) => {
+		setTimeout(() => {
 			quote.classList.add("show");
 		}, 1000);
 		const quoteIndex = Math.floor(Math.random() * data.length);
@@ -29,7 +29,6 @@ fetch('https://breaking-bad-quotes.herokuapp.com/v1/quotes/100')
 	
 	btn.addEventListener("click", getQuote);
 	
-})
-.catch(err => {
+}).catch(err => {
 	console.log("Did not work.", err)
 });

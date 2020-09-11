@@ -2,7 +2,7 @@
 :root {
   font-size: 62.5%;
   color: #333;
-  background: url(rv.jpg);
+  background: url(rv.jpg) center 0;
   background-size: cover;
   height: 100%;
   display: flex;
